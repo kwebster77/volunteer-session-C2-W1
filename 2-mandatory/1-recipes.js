@@ -22,4 +22,36 @@
   You should write and log at least 5 recipes
 */
 
-// write code here
+let recipe = {
+  recipeOne: {
+  title: "mole",
+  servings: 2,
+  Ingredients: ["cinnamon", "cumin", "cocoa"]
+  },
+  recipeTwo:{
+    title: "pancakes",
+    servings: 6,
+    Ingredients: ["cinnamon", "flour", "cocoa", "butter", "eggs"]
+  },
+  recipeThree: {
+    title: "rice",
+    servings: 4,
+    Ingredients: ["rice", "water", "salt"]
+  },
+  recipeFour: {
+    title: "cake",
+    servings: 8,
+    Ingredients: ["flour", "eggs", "sugar", "cocoa"]
+  },
+  recipeFive: {
+    title: "bread",
+    servings: 1,
+    Ingredients: ["flour", "yeast", "salt"]
+  }
+}
+
+console.log(recipe.recipeOne)
+console.log(recipe.recipeTwo)
+console.log(recipe.recipeThree)
+console.log(recipe.recipeFour)
+console.log(recipe.recipeFive)

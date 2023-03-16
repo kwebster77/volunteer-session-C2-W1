@@ -6,7 +6,8 @@
 let student = {
   name: "Reshma Saujani",
   examScore: 65,
-  hasPassed: false
+  hasPassed: false,
+  attendance: 90
 };
 
 /*
@@ -27,7 +28,15 @@ let student = {
 
 // write code here
 
-console.log(student);
+function studentScore(students){
+
+  if (students.attendance >= 90 && students.examScore > 60){
+    students.hasPassed = true
+  }
+  return student
+};
+
+console.log(studentScore(student));
 
 /* EXPECTED RESULT
 

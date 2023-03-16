@@ -12,14 +12,16 @@
 let car = {
   brand: "Ford",
   yearsOld: 8,
+  // colour: "yellow"
 };
-
+// no color defined
 console.log(car["colour"]);
 
 // Example 2
 function sayHelloToUser(user) {
   console.log(`Hello ${user.firstName}`);
 }
+// it's defined as name, not firstName
 
 let user = {
   name: "Mira"
@@ -36,3 +38,5 @@ let myPet = {
 };
 
 console.log(myPet.getName());
+
+// need to have a return

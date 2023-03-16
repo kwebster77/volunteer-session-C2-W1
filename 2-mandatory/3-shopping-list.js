@@ -18,9 +18,24 @@ let pantry = {
   cupboardContents: ["salt", "tinned tomatoes", "oregano"],
 };
 
-function createShoppingList(recipe) {
-  // write code here
-}
+// function createShoppingList(recipe){
+
+//  let totalItems =  pantry.fridgeContents.concat(pantry.cupboardContents)
+// return {name: recipe.name, items: recipe["ingredients"].filter(el=> !totalItems.includes(el))}
+
+// }
+
+function createShoppingList(recipe){
+
+  let totalItems =  pantry.fridgeContents.concat(pantry.cupboardContents)
+  let shoppingList = []
+  for(let ingredient of recipe.ingredients){
+    if(totalItems.includes(ingredient) == false){
+      shoppingList.push(ingredient)
+    }
+  }
+return {name: recipe.name, items: shoppingList}
+ }
 
 /* ======= TESTS - DO NOT MODIFY =====
 - To run the tests for this exercise, run `npm test -- --testPathPattern 3-shopping-list.js`

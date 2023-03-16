@@ -6,10 +6,15 @@
 let capitalCities = {
   UnitedKingdom: {
     name: "London",
-    population: 20,
+    population: 8980000,
   },
   China: {
     name: "Beijing",
+    population: 21500000
+  },
+  Peru: {
+    name: "Lima",
+    population: 9750000
   }
 };
 
@@ -21,6 +26,8 @@ let capitalCities = {
     - Add a name of "Lima" to Peru's capital city.
     - Add a population of 9750000 to Peru's capital city.
 */
+
+
 
 // write code here
 

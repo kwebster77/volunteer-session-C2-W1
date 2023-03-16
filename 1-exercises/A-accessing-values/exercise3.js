@@ -21,7 +21,8 @@ let basketballTeam = {
 */
 
 // write code here
-
+let bBall = basketballTeam.topPlayers
+console.log(bBall.sort())
 
 /* EXPECTED RESULT
 
