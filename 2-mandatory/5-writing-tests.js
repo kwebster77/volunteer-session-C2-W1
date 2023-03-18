@@ -114,4 +114,4 @@ test("a score of 30 is grade E", () => {
 test("a score of 70 is grade B", () => {
   let score = 70
   expect(convertScoreToGrade(score)).toEqual("B")
-})
+})                                                                                                                                     

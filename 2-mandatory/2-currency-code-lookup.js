@@ -22,7 +22,7 @@ function createLookup(COUNTRY_CURRENCY_CODES) {
 
   let codesCounter = {};
    for (let code of COUNTRY_CURRENCY_CODES){
-    codesCounter[code[0]] =code[1]
+    codesCounter[code[0]] = code[1]
   }
   return codesCounter
 };

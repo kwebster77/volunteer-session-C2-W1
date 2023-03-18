@@ -23,11 +23,33 @@
     - Setting values on an object
 */
 
+// function countWords(string) {
+//   const wordCount = {};
+//   if (string.length == 0) return wordCount;
+
+//   let words = string.split(' ').sort();
+
+//   for (let word of words){
+//     wordCount[word] = wordCount[word] ? wordCount[word] +1 :1
+
+// }
+//   return wordCount;
+// };
+
+
 function countWords(string) {
   const wordCount = {};
+  if (string.length == 0) return wordCount;
 
-  // write code here
+  let words = string.split(' ').sort();
 
+  for (let word of words){
+    if (wordCount[word]){
+      wordCount[word]=wordCount[word] + 1
+    }else{
+      wordCount[word]= 1
+    }
+}
   return wordCount;
 }
 
